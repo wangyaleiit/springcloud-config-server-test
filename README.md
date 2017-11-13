@@ -1,0 +1,1 @@
+# springcloud-config-server-test
