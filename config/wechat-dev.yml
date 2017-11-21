@@ -21,6 +21,8 @@ spring:
       timeBetweenEvictionRunsMillis: 60000
       minEvictableIdleTimeMillis: 300000
       maxPoolPreparedStatementPerConnectionSize: 20
+  logging: 
+     config: classpath:logback-spring.xml
   redis:
     host: 127.0.0.1
     port: 6379
