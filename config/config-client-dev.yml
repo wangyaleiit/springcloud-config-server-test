@@ -1,1 +1,2 @@
-foo: abc
+test: 
+ foo: abc
