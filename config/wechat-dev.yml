@@ -34,10 +34,8 @@ spring:
       max-active: 8
       max-wait: -1
 
-mybatis:   
+mybatis:
   mapperLocations: classpath:config/mybatis/*/*.xml
   typeAliasesPackage: com.fs.entity
   check-config-location: true
   config-location: classpath:mybatis-config.xml
-
-hi: '{cipher}AQAxsABJBNziPpbKV7cOoKPjHRTxclhpbynqclTNSL1KZxFAo7uKaRgzoXO59Z8QodC9BFICaKr5VRbNwiFup08lEYLoMHXI8hYAkxwliZtIV568txu9nZ/hSHWv2+yXpcpbwRrq18xHAz4EOnqsibqeKpg498DjdsCIrly+SzD1NLiSQZf66NBDsBl5ati+q1xTMzxFzq/918yfRMAlG1X4+Dj1+Y5tyaAii+YAV0WUW4Q+VpanPvEat2uf5xwzPnlLiBKIXOYtXP8w7cRRfs0o3FfcorrNjqBPzKNXR/pMliJRT+AmDd5H0I4NDr0NLUWj91aZL0M4o9QT9rpnsJy1WUDL7KOQtz+ROYkrJwQV3LXGtyn/GKffx868yuy2xg4='
