@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    druid: 
+      url: '{cipher}AQBULeuHgiJASZTP5As7CPTIecgDMNjQUPji+WJkYAj5WI0+rMoPoarV+P21SBEy5eCB6g6EDHfyA8mpR2hpvoULfgjevx7YNfqILJxgLXiEPGZ447wZoqRWDQ00BDD6Mbjlmwz/G5cLh0rIZVc3fTzXDaV06tc2OaxYEWQVZxdmt09rJGzZ2t8mIwJ/dsvi5xMGmtIPNBJBh4MtWsyY3Lo7uLC14BPU/Sp3BdRCk+LG7ow4UaYJ8YJ8kM2hnB6yhVYe7PDzJAlWZh7fed1NH+9v5sI+KyMiUmLaxna021wzDTV+u+i2GTz7YL+CwDBdVf3GxR5FdMwc4CkPD+u2GBHlp9Df729UTGyoooGaHAfGXKgtoq7sJbxvuBjkPKDovYF2IwnXNfGMPYLeR69PtgwnqUTg9eI9jGKb2xlHLPesUQNMiprHgkCBfP16Az6Ku41gFZD8TWuDfaxWrHal3ifmm+nhDk1I2RH9HJk1Uy/sHq0u9J1gae1I8zDp2IBaRMs='
+      driverClassName: com.mysql.jdbc.Driver
+      username: '{cipher}AQB1zKhGstkLPAtEaBRsaTn1M+pIw618eDDb6StTr5ncozNOPR5uH0uii37FGBupyJgIeSZ/tcuPyIe3x5z8xmE05KfVw6yKrJI3P5RLwdmm6kxxe3Bzs3zGNavQejqfTqkxqk9744d0m0OuedmbPi3FKDXg3LCmAFxTGbE2PJi1yI+X1C3JIfMK8ceYIctQ0p8xTEcAqa6mDUmkRnGP7fjUY4o2YU1yc3CoIcp7myEPIz6OVbWwOwtH8NhJkL3ibzwipHIWh/G9+hVjvB37W9IECNrkC2yOF0HzVhS7fYojjN90cJykyBuH49wc8X82IwTxGEv/xx+bH2fPL/HbVt3GxTj3h1zEEThMhCE7QXylMQOwf/i+LOXfkP2IYv/8Pq0='
+      password: '{cipher}AQB1zKhGstkLPAtEaBRsaTn1M+pIw618eDDb6StTr5ncozNOPR5uH0uii37FGBupyJgIeSZ/tcuPyIe3x5z8xmE05KfVw6yKrJI3P5RLwdmm6kxxe3Bzs3zGNavQejqfTqkxqk9744d0m0OuedmbPi3FKDXg3LCmAFxTGbE2PJi1yI+X1C3JIfMK8ceYIctQ0p8xTEcAqa6mDUmkRnGP7fjUY4o2YU1yc3CoIcp7myEPIz6OVbWwOwtH8NhJkL3ibzwipHIWh/G9+hVjvB37W9IECNrkC2yOF0HzVhS7fYojjN90cJykyBuH49wc8X82IwTxGEv/xx+bH2fPL/HbVt3GxTj3h1zEEThMhCE7QXylMQOwf/i+LOXfkP2IYv/8Pq0='
+      filters: stat,slf4j,wall
+      initialSize: 10
+      maxActive: 100
+      maxWait: 60000
+      minIdle: 10
+      logAbandoned: true
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      removeAbandoned: true
+      validationQuery: SELECT X FROM DUAL
+      removeAbandonedTimeout: 1800
+      poolPreparedStatements: false
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      maxPoolPreparedStatementPerConnectionSize: 20
+  logging: 
+     config: classpath:logback-spring.xml
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 0
+    #password: 
+    pool:
+      max-idle: 8
+      min-idle: 0
+      max-active: 8
+      max-wait: -1
+mybatis:
+  mapperLocations: classpath:config/mybatis/*/*.xml
+  typeAliasesPackage: com.fs.entity
+  check-config-location: true
+  config-location: classpath:mybatis-config.xml
